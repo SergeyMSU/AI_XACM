@@ -3889,8 +3889,8 @@ int main(void)
                         E_kin_the += dV * 0.5 * rho * kv(Vthe);
                         E_kin_phi += dV * 0.5 * rho * kv(vz);
                         E_th += dV * p / (ggg - 1.0);
-                        E_B_pole = dV * (kv(Br) + kv(Bthe)) / (8.0 * pi);
-                        E_B_phi = dV * (kv(bz)) / (8.0 * pi);
+                        E_B_pole += dV * (kv(Br) + kv(Bthe)) / (8.0 * pi);
+                        E_B_phi += dV * (kv(bz)) / (8.0 * pi);
                     }
 
                     double a = fabs(phi);
